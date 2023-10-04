@@ -28,7 +28,7 @@ const SearchController = () => {
         setPokemonInfo(pokemonData);
         setabilitiesInfo(abilitiesData);
       } else {
-        setPokemonInfo('Nie znaleziono takiego pokemona!');
+        setPokemonInfo('Found no such pokemon!');
       }
     } catch (e) {}
   };

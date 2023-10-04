@@ -30,13 +30,10 @@ const SearchController = () => {
       } else {
         setPokemonInfo('Nie znaleziono takiego pokemona!');
       }
-    } catch (e) {
-      setPokemonInfo('Nie znaleziono takiego pokemona!');
-    }
+    } catch (e) {}
   };
 
   const getAbilityData = async (pokemonData) => {
-    console.log(pokemonData);
     const abilities = [...pokemonData.abilities];
     const abilityData = abilities.map(async (ability) => {
       const response = await fetch(
